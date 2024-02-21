@@ -1,0 +1,166 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:CompileBindings="False"
+             x:Class="BudgetF.Views.CreateUserView">
+
+	<Grid ShowGridLines="False"  Background="#333333">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+
+
+
+		<!--LOGIN PAGE TITLE-->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="1"
+				   Grid.ColumnSpan="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="24">
+			CREATE ACCOUNT
+		</TextBlock>
+
+
+		<!--ERROR TEXT-->
+		<TextBlock Grid.Column="1"
+				   Grid.Row="4"
+				   Grid.ColumnSpan="3"
+				   TextAlignment="Center"
+				   Text="{Binding Error}"
+				   Foreground="Red">
+		</TextBlock>
+
+
+		<!--Firstname BOX TEXT-->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="2"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="18">
+			Firstname:
+		</TextBlock>
+
+
+		<!--Lastname BOX TEXT-->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="2"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="18">
+			Lastname:
+		</TextBlock>
+		
+
+		<!--Username BOX TEXT-->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="0"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="18">
+			Username:
+		</TextBlock>
+
+
+		<!--Password BOX TEXT-->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="0"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="18">
+			Password:
+		</TextBlock>
+
+
+		<!--Firstname Input-->
+		<TextBox Grid.Row="2"
+				 Grid.Column="3"
+				 HorizontalAlignment="Stretch"
+				 VerticalAlignment="Center"
+				 Background="WhiteSmoke"
+				 Text="{Binding Firstname}">
+		</TextBox>
+
+
+		<!--Lastname Input-->
+		<TextBox Grid.Row="3"
+				 Grid.Column="3"
+				 HorizontalAlignment="Stretch"
+				 VerticalAlignment="Center"
+				 Background="WhiteSmoke"
+				 Text="{Binding Lastname}">
+		</TextBox>
+
+
+
+		<!--Usermame Input-->
+		<TextBox Grid.Row="2"
+				 Grid.Column="1"
+				 HorizontalAlignment="Stretch"
+				 VerticalAlignment="Center"
+				 Background="WhiteSmoke"
+				 Text="{Binding Username}">
+		</TextBox>
+
+
+		<!--Password Input-->
+		<TextBox PasswordChar="*"
+				 Grid.Row="3"
+				 Grid.Column="1"
+				 HorizontalAlignment="Stretch"
+				 VerticalAlignment="Center"
+				 Background="WhiteSmoke"
+				 Text="{Binding Password}">
+		</TextBox>
+
+
+		<!--LOGIN BTN-->
+		<Button Grid.Column="1"
+				Grid.Row="4"
+				Grid.ColumnSpan="3"
+				Content="CREATE ACCOUNT"
+				VerticalAlignment="Center"
+				HorizontalContentAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Background="Gray"
+				Command="{Binding CreateMyUser}">
+		</Button>
+		
+		
+		
+		<!--BACK BTN-->
+		<Button Grid.Column="1"
+				Grid.Row="5"
+				Grid.ColumnSpan="3"
+				Content="BACK"
+				VerticalAlignment="Top"
+				HorizontalContentAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Background="Gray"
+				Command="{Binding BackBTN}">
+		</Button>
+
+
+
+
+	</Grid>
+</UserControl>

@@ -1,0 +1,26 @@
+﻿{
+  "EssentialExpenses": {
+    "Rent/Mortgage": 0.30,
+    "Utilities": 0.10,
+    "Groceries": 0.10,
+    "Transportation": 0.05,
+    "InsurancePremiums": 0.05,
+    "MinimumDebtPayments": 0.05,
+    "OtherEssentialExpenses": 0.05
+  },
+  "FinancialGoals": {
+    "RetirementSavings": 0.10,
+    "EmergencyFund": 0.05,
+    "HouseDownPayment": 0.03,
+    "Investments": 0.02,
+    "ChildrenEducationSavings": 0
+  },
+  "DiscretionarySpending": {
+    "DiningOut": 0.10,
+    "Entertainment": 0.05,
+    "Travel": 0.05,
+    "Hobbies": 0.03,
+    "Shopping": 0.02,
+    "OtherDiscretionaryExpenses": 0.05
+  }
+}

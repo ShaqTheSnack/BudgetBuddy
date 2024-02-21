@@ -1,0 +1,85 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:CompileBindings="False"
+             x:Class="BudgetF.Views.HomePageView">
+
+	<Grid ShowGridLines="False"  Background="#333333">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+
+
+
+		<!--LOGIN PAGE TITLE-->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="1"
+				   Grid.ColumnSpan="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="24">
+			HOME
+		</TextBlock>
+
+
+
+		<!--How much do you earn BTN-->
+		<Button Grid.Column="1"
+				Grid.Row="2"
+				Grid.ColumnSpan="3"
+				Content="Your Earnings Details"
+				VerticalAlignment="Center"
+				HorizontalContentAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Background="Gray"
+				Foreground="White"
+				Command="{Binding MyIncome}">
+		</Button>
+
+
+		<!--My Budget BTN-->
+		<Button Grid.Column="1"
+				Grid.Row="3"
+				Grid.ColumnSpan="3"
+				Content="Your Bills"
+				VerticalAlignment="Center"
+				HorizontalContentAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Background="Gray"
+				Foreground="White"
+				Command="{Binding BillsBTN}">
+		</Button>
+
+
+		<!--My Budget BTN-->
+		<Button Grid.Column="1"
+				Grid.Row="4"
+				Grid.ColumnSpan="3"
+				Content="THE BUDGET"
+				VerticalAlignment="Center"
+				HorizontalContentAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Background="Gray"
+				Foreground="White"
+				Command="{Binding BudgetBTN}">
+		</Button>
+		
+		
+		
+	</Grid>
+</UserControl>

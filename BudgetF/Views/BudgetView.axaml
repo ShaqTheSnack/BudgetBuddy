@@ -1,0 +1,70 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:CompileBindings="False"
+             x:Class="BudgetF.Views.BudgetView">
+
+
+	<Grid ShowGridLines="False"  Background="#333333">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+
+
+		<TextBlock Grid.Column="0" Grid.Row="0" FontSize="20" Grid.ColumnSpan="5" TextAlignment="Center" Foreground="White">
+			PRESS ON EVERYTHING YOU NEED TO INCLUDE IN THE MONTHLY BUDGET
+		</TextBlock>
+		<TextBlock Grid.Column="0" Grid.Row="0" FontSize="20" Grid.ColumnSpan="5" TextAlignment="Center" VerticalAlignment="Bottom" Foreground="White">
+			↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+		</TextBlock>
+
+		<CheckBox Grid.Column="0" Grid.Row="1" IsChecked="{Binding RentTrue, Mode=TwoWay}" Foreground="White">Rent/Mortgage</CheckBox>
+		<CheckBox Grid.Column="1" Grid.Row="1" IsChecked="{Binding UtilitiesTrue, Mode=TwoWay}" Foreground="White">Utilities</CheckBox>
+		<CheckBox Grid.Column="2" Grid.Row="1" IsChecked="{Binding GroceriesTrue, Mode=TwoWay}" Foreground="White">Groceries</CheckBox>
+		<CheckBox Grid.Column="3" Grid.Row="1" IsChecked="{Binding TransportationTrue, Mode=TwoWay}" Foreground="White">Transportation</CheckBox>
+		<CheckBox Grid.Column="4" Grid.Row="1" IsChecked="{Binding InsurancePremiumsTrue, Mode=TwoWay}" Foreground="White">Insurance Premiums</CheckBox>
+		<CheckBox Grid.Column="0" Grid.Row="2" IsChecked="{Binding MinimumDebtPaymentsTrue, Mode=TwoWay}" Foreground="White">Minimum Debt Payments</CheckBox>
+		<CheckBox Grid.Column="1" Grid.Row="2" IsChecked="{Binding OtherEssentialExpensesTrue, Mode=TwoWay}" Foreground="White">Other Essential Expenses</CheckBox>
+		<CheckBox Grid.Column="2" Grid.Row="2" IsChecked="{Binding RetirementSavingsTrue, Mode=TwoWay}" Foreground="White">Retirement Savings</CheckBox>
+		<CheckBox Grid.Column="3" Grid.Row="2" IsChecked="{Binding EmergencyFundTrue, Mode=TwoWay}" Foreground="White">Emergency Fund</CheckBox>
+		<CheckBox Grid.Column="4" Grid.Row="2" IsChecked="{Binding HouseDownPaymentTrue, Mode=TwoWay}" Foreground="White">House Down Payment</CheckBox>
+		<CheckBox Grid.Column="0" Grid.Row="3" IsChecked="{Binding InvestmentsTrue, Mode=TwoWay}" Foreground="White">Investments</CheckBox>
+		<CheckBox Grid.Column="1" Grid.Row="3" IsChecked="{Binding ChildrenEducationSavingsTrue, Mode=TwoWay}" Foreground="White">Children Education Savings</CheckBox>
+		<CheckBox Grid.Column="2" Grid.Row="3" IsChecked="{Binding DiningOutTrue, Mode=TwoWay}" Foreground="White">Dining Out</CheckBox>
+		<CheckBox Grid.Column="3" Grid.Row="3" IsChecked="{Binding EntertainmentTrue, Mode=TwoWay}" Foreground="White">Entertainment</CheckBox>
+		<CheckBox Grid.Column="4" Grid.Row="3" IsChecked="{Binding TravelTrue, Mode=TwoWay}" Foreground="White">Travel</CheckBox>
+		<CheckBox Grid.Column="0" Grid.Row="4" IsChecked="{Binding HobbiesTrue, Mode=TwoWay}" Foreground="White">Hobbies</CheckBox>
+		<CheckBox Grid.Column="1" Grid.Row="4" IsChecked="{Binding ShoppingTrue, Mode=TwoWay}" Foreground="White">Shopping</CheckBox>
+		<CheckBox Grid.Column="2" Grid.Row="4" IsChecked="{Binding OtherDiscretionaryExpensesTrue, Mode=TwoWay}" Foreground="White">Other Discretionary Expenses</CheckBox>
+		<CheckBox Grid.Column="3" Grid.Row="4" IsChecked="{Binding MaleTrue, Mode=TwoWay}" Foreground="White">Male</CheckBox>
+		<CheckBox Grid.Column="4" Grid.Row="4" IsChecked="{Binding FemaleTrue, Mode=TwoWay}" Foreground="White">Female</CheckBox>
+
+
+		<Button Grid.Column="0"
+				Grid.Row="5"
+				Grid.ColumnSpan="5"
+				Content="VIEW BUDGET HERE"
+				VerticalAlignment="Center"
+				HorizontalContentAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Background="Gray"
+				Foreground="White"
+				Command="{Binding ViewBudget}">
+		</Button>
+
+	</Grid>
+	</UserControl>
