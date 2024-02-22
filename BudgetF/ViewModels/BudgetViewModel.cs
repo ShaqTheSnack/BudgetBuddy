@@ -16,245 +16,204 @@ namespace BudgetF.ViewModels
         }
 
         #region ALL BOOLS
-        private bool _RentTrue;
+
         public bool RentTrue
         {
-            get => _RentTrue;
+            get => MainWindowViewModel.Instance.TV.RENT;
             set
             {
-                this.RaiseAndSetIfChanged(ref _RentTrue, value, nameof(RentTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.RENT, value, nameof(RentTrue));
             }
         }
 
-        private bool _UtilitiesTrue;
+
         public bool UtilitiesTrue
         {
-            get => _UtilitiesTrue;
+            get => MainWindowViewModel.Instance.TV.UTILITIES;
             set
             {
-                this.RaiseAndSetIfChanged(ref _UtilitiesTrue, value, nameof(UtilitiesTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.UTILITIES, value, nameof(UtilitiesTrue));
             }
         }
 
-        private bool _GroceriesTrue;
+
         public bool GroceriesTrue
         {
-            get => _GroceriesTrue;
+            get => MainWindowViewModel.Instance.TV.GROCERIES;
             set
             {
-                this.RaiseAndSetIfChanged(ref _GroceriesTrue, value, nameof(GroceriesTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.GROCERIES, value, nameof(GroceriesTrue));
             }
         }
 
-        private bool _TransportationTrue;
+
         public bool TransportationTrue
         {
-            get => _TransportationTrue;
+            get => MainWindowViewModel.Instance.TV.TRANSPORTATION;
             set
             {
-                this.RaiseAndSetIfChanged(ref _TransportationTrue, value, nameof(TransportationTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.TRANSPORTATION, value, nameof(TransportationTrue));
             }
         }
 
-        private bool _InsurancePremiumsTrue;
+
         public bool InsurancePremiumsTrue
         {
-            get => _InsurancePremiumsTrue;
+            get => MainWindowViewModel.Instance.TV.INSURANCEPREMIUMS;
             set
             {
-                this.RaiseAndSetIfChanged(ref _InsurancePremiumsTrue, value, nameof(InsurancePremiumsTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.INSURANCEPREMIUMS, value, nameof(InsurancePremiumsTrue));
             }
         }
 
-        private bool _MinimumDebtPaymentsTrue;
+
         public bool MinimumDebtPaymentsTrue
         {
-            get => _MinimumDebtPaymentsTrue;
+            get => MainWindowViewModel.Instance.TV.MINIMUMDEBTPAYMENTS;
             set
             {
-                this.RaiseAndSetIfChanged(ref _MinimumDebtPaymentsTrue, value, nameof(MinimumDebtPaymentsTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.MINIMUMDEBTPAYMENTS, value, nameof(MinimumDebtPaymentsTrue));
             }
         }
 
-        private bool _OtherEssentialExpensesTrue;
+
         public bool OtherEssentialExpensesTrue
         {
-            get => _OtherEssentialExpensesTrue;
+            get => MainWindowViewModel.Instance.TV.OTHERESSENTIALEXPENSES;
             set
             {
-                this.RaiseAndSetIfChanged(ref _OtherEssentialExpensesTrue, value, nameof(OtherEssentialExpensesTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.OTHERESSENTIALEXPENSES, value, nameof(OtherEssentialExpensesTrue));
             }
         }
 
-        private bool _RetirementSavingsTrue;
+
         public bool RetirementSavingsTrue
         {
-            get => _RetirementSavingsTrue;
+            get => MainWindowViewModel.Instance.TV.RETIREMENTSAVINGS;
             set
             {
-                this.RaiseAndSetIfChanged(ref _RetirementSavingsTrue, value, nameof(RetirementSavingsTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.RETIREMENTSAVINGS, value, nameof(RetirementSavingsTrue));
             }
         }
 
-        private bool _EmergencyFundTrue;
+
         public bool EmergencyFundTrue
         {
-            get => _EmergencyFundTrue;
+            get => MainWindowViewModel.Instance.TV.EMERGENCYFUND;
             set
             {
-                this.RaiseAndSetIfChanged(ref _EmergencyFundTrue, value, nameof(EmergencyFundTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.EMERGENCYFUND, value, nameof(EmergencyFundTrue));
             }
         }
 
-        private bool _HouseDownPaymentTrue;
+
         public bool HouseDownPaymentTrue
         {
-            get => _HouseDownPaymentTrue;
+            get => MainWindowViewModel.Instance.TV.HOUSEDOWNPAYMENT;
             set
             {
-                this.RaiseAndSetIfChanged(ref _HouseDownPaymentTrue, value, nameof(HouseDownPaymentTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.HOUSEDOWNPAYMENT, value, nameof(HouseDownPaymentTrue));
             }
         }
 
-        private bool _InvestmentsTrue;
+
         public bool InvestmentsTrue
         {
-            get => _InvestmentsTrue;
+            get => MainWindowViewModel.Instance.TV.INVESTMENTS;
             set
             {
-                this.RaiseAndSetIfChanged(ref _InvestmentsTrue, value, nameof(InvestmentsTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.INVESTMENTS, value, nameof(InvestmentsTrue));
             }
         }
 
-        private bool _ChildrenEducationSavingsTrue;
+
         public bool ChildrenEducationSavingsTrue
         {
-            get => _ChildrenEducationSavingsTrue;
+            get => MainWindowViewModel.Instance.TV.CHILDRENEDUCATIONSAVINGS;
             set
             {
-                this.RaiseAndSetIfChanged(ref _ChildrenEducationSavingsTrue, value, nameof(ChildrenEducationSavingsTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.CHILDRENEDUCATIONSAVINGS, value, nameof(ChildrenEducationSavingsTrue));
             }
         }
 
-        private bool _DiningOutTrue;
+
         public bool DiningOutTrue
         {
-            get => _DiningOutTrue;
+            get => MainWindowViewModel.Instance.TV.DININGOUT;
             set
             {
-                this.RaiseAndSetIfChanged(ref _DiningOutTrue, value, nameof(DiningOutTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.DININGOUT, value, nameof(DiningOutTrue));
             }
         }
 
-        private bool _EntertainmentTrue;
         public bool EntertainmentTrue
         {
-            get => _EntertainmentTrue;
+            get => MainWindowViewModel.Instance.TV.ENTERTAINMENT;
             set
             {
-                this.RaiseAndSetIfChanged(ref _EntertainmentTrue, value, nameof(EntertainmentTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.ENTERTAINMENT, value, nameof(EntertainmentTrue));
             }
         }
 
-        private bool _TravelTrue;
         public bool TravelTrue
         {
-            get => _TravelTrue;
+            get => MainWindowViewModel.Instance.TV.TRAVEL;
             set
             {
-                this.RaiseAndSetIfChanged(ref _TravelTrue, value, nameof(TravelTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.TRAVEL, value, nameof(TravelTrue));
             }
         }
 
-        private bool _HobbiesTrue;
+
         public bool HobbiesTrue
         {
-            get => _HobbiesTrue;
+            get => MainWindowViewModel.Instance.TV.HOBBIES;
             set
             {
-                this.RaiseAndSetIfChanged(ref _HobbiesTrue, value, nameof(HobbiesTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.HOBBIES, value, nameof(HobbiesTrue));
             }
         }
 
-        private bool _ShoppingTrue;
         public bool ShoppingTrue
         {
-            get => _ShoppingTrue;
+            get => MainWindowViewModel.Instance.TV.SHOPPING;
             set
             {
-                this.RaiseAndSetIfChanged(ref _ShoppingTrue, value, nameof(ShoppingTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.SHOPPING, value, nameof(ShoppingTrue));
             }
         }
 
-        private bool _OtherDiscretionaryExpensesTrue;
+
         public bool OtherDiscretionaryExpensesTrue
         {
-            get => _OtherDiscretionaryExpensesTrue;
+            get => MainWindowViewModel.Instance.TV.OTHERDISCRETIONARYEXPENSES;
             set
             {
-                this.RaiseAndSetIfChanged(ref _OtherDiscretionaryExpensesTrue, value, nameof(OtherDiscretionaryExpensesTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.OTHERDISCRETIONARYEXPENSES, value, nameof(OtherDiscretionaryExpensesTrue));
             }
         }
 
-        private bool _MaleTrue;
         public bool MaleTrue
         {
-            get => _MaleTrue;
+            get => MainWindowViewModel.Instance.TV.MALE;
             set
             {
-                this.RaiseAndSetIfChanged(ref _MaleTrue, value, nameof(MaleTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.MALE, value, nameof(MaleTrue));
             }
         }
 
-        private bool _FemaleTrue;
         public bool FemaleTrue
         {
-            get => _FemaleTrue;
+            get => MainWindowViewModel.Instance.TV.FEMALE;
             set
             {
-                this.RaiseAndSetIfChanged(ref _FemaleTrue, value, nameof(FemaleTrue));
+                this.RaiseAndSetIfChanged(ref MainWindowViewModel.Instance.TV.FEMALE, value, nameof(FemaleTrue));
             }
         }
         #endregion
-
-        #region All CheckedORNot
-        public void CheckOrNot()
-        {
-
-            MainWindowViewModel.Instance.TV.RENT = RentTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.UTILITIES = UtilitiesTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.GROCERIES = GroceriesTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.TRANSPORTATION = TransportationTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.INSURANCEPREMIUMS = InsurancePremiumsTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.MINIMUMDEBTPAYMENTS = MinimumDebtPaymentsTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.OTHERESSENTIALEXPENSES = OtherEssentialExpensesTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.RETIREMENTSAVINGS = RetirementSavingsTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.EMERGENCYFUND = EmergencyFundTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.HOUSEDOWNPAYMENT = HouseDownPaymentTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.INVESTMENTS = InvestmentsTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.CHILDRENEDUCATIONSAVINGS = ChildrenEducationSavingsTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.DININGOUT = DiningOutTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.ENTERTAINMENT = EntertainmentTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.TRAVEL = TravelTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.HOBBIES = HobbiesTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.SHOPPING = ShoppingTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.OTHERDISCRETIONARYEXPENSES = OtherDiscretionaryExpensesTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.MALE = MaleTrue ? "1" : "0";
-            MainWindowViewModel.Instance.TV.FEMALE = FemaleTrue ? "1" : "0";
-        }
-        #endregion
-
-
-
-
-
-
-
-
 
         public void ViewBudget()
         {
-            CheckOrNot();
             MainWindowViewModel.Instance.SetViewModel(new ViewBudgetViewModel());
         }
     }

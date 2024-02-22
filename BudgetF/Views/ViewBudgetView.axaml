@@ -14,6 +14,9 @@
 			<ColumnDefinition></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
 		</Grid.ColumnDefinitions>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"></RowDefinition>
@@ -24,12 +27,49 @@
 			<RowDefinition Height="*"></RowDefinition>
 		</Grid.RowDefinitions>
 
+		<Border Grid.Column="1" Grid.Row="0" Background="White"></Border>
+		<Border Grid.Column="1" Grid.Row="1" Background="DarkGray"></Border>
+		<Border Grid.Column="1" Grid.Row="2" Background="White"></Border>
+		<Border Grid.Column="1" Grid.Row="3" Background="DarkGray"></Border>
+		<Border Grid.Column="1" Grid.Row="4" Background="White"></Border>
+		<Border Grid.Column="3" Grid.Row="0" Background="White"></Border>
+		<Border Grid.Column="3" Grid.Row="1" Background="DarkGray"></Border>
+		<Border Grid.Column="3" Grid.Row="2" Background="White"></Border>
+		<Border Grid.Column="3" Grid.Row="3" Background="DarkGray"></Border>
+		<Border Grid.Column="3" Grid.Row="4" Background="White"></Border>
+		<Border Grid.Column="5" Grid.Row="0" Background="White"></Border>
+		<Border Grid.Column="5" Grid.Row="1" Background="DarkGray"></Border>
+		<Border Grid.Column="5" Grid.Row="2" Background="White"></Border>
+		<Border Grid.Column="5" Grid.Row="3" Background="DarkGray"></Border>
+		<Border Grid.Column="5" Grid.Row="4" Background="White"></Border>
+		<Border Grid.Column="7" Grid.Row="0" Background="White"></Border>
+		<Border Grid.Column="7" Grid.Row="1" Background="DarkGray"></Border>
+		<Border Grid.Column="7" Grid.Row="2" Background="White"></Border>
+		<Border Grid.Column="7" Grid.Row="3" Background="DarkGray"></Border>
+		<Border Grid.Column="0" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="1" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="2" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="3" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="4" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="5" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="6" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="7" Grid.Row="5" Background="DarkGray"></Border>
+		<Border Grid.Column="7" Grid.Row="4" Background="White"></Border>
 		
+		
+		
+		<Border Grid.Column="6" Grid.Row="4" Background="Green"></Border>
+		<Border Grid.Column="4" Grid.Row="4" Background="Red"></Border>
+		
+
+
+
 		
 		<!--BackBTN-->
 		<Button Grid.Column="1"
 				Grid.Row="5"
-				Grid.ColumnSpan="3"
+				Grid.RowSpan="1"
+				Grid.ColumnSpan="6"
 				Content="BACK"
 				VerticalAlignment="Center"
 				HorizontalContentAlignment="Center"
@@ -38,17 +78,460 @@
 				Foreground="White"
 				Command="{Binding BackBTN}">
 		</Button>
+
+		<!-- KRONER -->
+		<TextBlock Grid.Row="5"
+				   Grid.Column="0"
+				   Grid.ColumnSpan="8"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Bottom"
+				   Foreground="Red"
+				   FontSize="14">
+			ALL NUMBERS ARE MONEY, THE CURENCY IS DKK. (Official Currency Of Denmark)
+		</TextBlock>
+		<!-- KRONER -->
+		<TextBlock Grid.Row="5"
+				   Grid.Column="0"
+				   Grid.ColumnSpan="8"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Bottom"
+				   Foreground="Black"
+				   FontSize="14">
+			ALL NUMBERS ARE MONEY, THE CURENCY IS DKK. (Official Currency Of Denmark)
+		</TextBlock>
+		
+
+
+
+
+
+
+
+
+
+		<!-- Rent -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="0"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Rent:
+		</TextBlock>
+		<!-- Utilities -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="0"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Utilities:
+		</TextBlock>
+		<!-- Groceries -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="0"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Groceries:
+		</TextBlock>
+		<!-- Transport -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="0"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Transport:
+		</TextBlock>
+		<!-- Insurance -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="0"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Insurance:
+		</TextBlock>
+		<!-- Debt -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="2"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Debt:
+		</TextBlock>
+		<!-- Essentials -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="2"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Essentials:
+		</TextBlock>
+		<!-- Retirement -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="2"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Retirement:
+		</TextBlock>
+		<!-- Emergency -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="2"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Emergency:
+		</TextBlock>
+		<!-- Down Payment -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="2"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Down Payment:
+		</TextBlock>
+		<!-- Investments -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="6"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Investments:
+		</TextBlock>
+		<!-- Education -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="4"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Education:
+		</TextBlock>
+		<!-- Dining -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="4"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Dining:
+		</TextBlock>
+		<!-- Entertainment -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="4"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Entertainment:
+		</TextBlock>
+		<!-- Travel -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="4"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Travel:
+		</TextBlock>
+		<!-- Hobbies -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="6"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Hobbies:
+		</TextBlock>
+		<!-- Shopping -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="6"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Shopping:
+		</TextBlock>
+		<!-- Discretionary -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="6"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Discretionary:
+		</TextBlock>
+		<!-- Savings account -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="6"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Savings:
+		</TextBlock>
+		<!-- Total -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="4"
+				   HorizontalAlignment="Right"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="22">
+			Total:
+		</TextBlock>
+		
+		
+		
+		
+		<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+		
+		<!-- Rent -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="1"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum1}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- UTILITIS -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="1"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum2}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- Groceries -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="1"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum3}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+
+		<!-- Transport -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="1"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum4}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- Insurance -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="1"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum5}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- Down Pay -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum9}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- Essentials -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum7}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- Retirement -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum8}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- Emergency -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum18}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- Debt -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum6}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- Travel -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="5"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum14}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- Education -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="5"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum11}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- Dining out -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="5"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum12}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- Entertainment -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="5"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum13}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- TOTAL -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="5"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding TotalPayment}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+		<!-- Hobbies -->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="7"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum15}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- Shopping -->
+		<TextBlock Grid.Row="1"
+				   Grid.Column="7"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum16}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+		<!-- DiscretionaryOTHER -->
+		<TextBlock Grid.Row="2"
+				   Grid.Column="7"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum17}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+
+		<!-- Investing -->
+		<TextBlock Grid.Row="3"
+				   Grid.Column="7"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding Sum10}"
+				   FontSize="22">
+			x
+		</TextBlock>
+
+
+
+		<!-- Savings -->
+		<TextBlock Grid.Row="4"
+				   Grid.Column="7"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="Black"
+				   Text="{Binding TotalSavings}"
+				   FontSize="22">
+			x
+		</TextBlock>
 		
 		
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		</Grid>
+	</Grid>
 </UserControl>

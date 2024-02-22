@@ -9,11 +9,26 @@ using Avalonia.Controls.Templates;
 
 namespace BudgetF.ViewModels
 {
-    internal class MyIncomeViewModel : ViewModelBase
+    public class MyIncomeViewModel : ViewModelBase
     {
         public MyIncomeViewModel()
         {
+
         }
+
+
+
+        
+        private double _personalIncome;
+        public double PersonalIncome
+        {
+            get => _personalIncome;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _personalIncome, value, nameof(PersonalIncome));
+            }
+        }
+
 
 
         public void BackButton()

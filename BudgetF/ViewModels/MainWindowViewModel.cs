@@ -14,6 +14,7 @@ namespace BudgetF.ViewModels
         private ViewModelBase _contentViewModel;
         public UserInfoModel UserInfo = new UserInfoModel();
         public TheValues TV = new TheValues();
+        public MyIncomeViewModel Income = new MyIncomeViewModel();
 
 
         public ViewModelBase ContentViewModel

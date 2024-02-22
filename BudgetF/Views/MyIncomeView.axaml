@@ -23,8 +23,61 @@
 			<RowDefinition Height="*"></RowDefinition>
 		</Grid.RowDefinitions>
 
+
+
+		<!--SALERY PAGE-->
+		<TextBlock Grid.Row="0"
+				   Grid.Column="1"
+				   Grid.ColumnSpan="3"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   Foreground="White"
+				   FontSize="24">
+			WRITE YOUR SALERY/INCOME BELOW
+		</TextBlock>
+
+		<!-- KRONER -->
+		<TextBlock Grid.Row="5"
+				   Grid.Column="0"
+				   Grid.ColumnSpan="8"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Bottom"
+				   Foreground="Red"
+				   FontSize="14">
+			ALL NUMBERS ARE MONEY, THE CURENCY IS DKK. (Official Currency Of Denmark)
+		</TextBlock>
+		<!-- KRONER -->
+		<TextBlock Grid.Row="5"
+				   Grid.Column="0"
+				   Grid.ColumnSpan="8"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Bottom"
+				   Foreground="Black"
+				   FontSize="14">
+			ALL NUMBERS ARE MONEY, THE CURENCY IS DKK. (Official Currency Of Denmark)
+		</TextBlock>
+
+
+
+
+		<!--INCOME Input-->
+		<TextBox Grid.Row="3"
+				 Grid.Column="1"
+				 Grid.ColumnSpan="3"
+				 HorizontalAlignment="Stretch"
+				 VerticalAlignment="Center"
+				 Background="WhiteSmoke"
+				 Text="{Binding PersonalIncome}">
+		</TextBox>
 		
-		<!--My Budget BTN-->
+		
+		
+		
+		
+		
+		
+		
+		<!--BACK BTN-->
 		<Button Grid.Column="1"
 				Grid.Row="5"
 				Grid.ColumnSpan="3"
