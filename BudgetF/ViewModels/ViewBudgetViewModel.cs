@@ -1,4 +1,5 @@
 ﻿using DynamicData.Aggregation;
+using Microsoft.Identity.Client;
 using ReactiveUI;
 using Splat;
 using System;
@@ -156,9 +157,7 @@ namespace BudgetF.ViewModels
        
         public void AllSalery()
         {
-            Salerys = MainWindowViewModel.Instance.Income.PersonalIncome;
-
-
+             RetrieveSalary();
              Sum1 = RENTVALUE * Salerys;
              Sum2 = UTILITIESVALUE * Salerys;
              Sum3 = GROCERIESVALUE * Salerys;
@@ -184,6 +183,23 @@ namespace BudgetF.ViewModels
         #region ForText
 
 
+
+
+        private string _user;
+        public string User
+        {
+            get => _user;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _user, value, nameof(Salerys));
+            }
+        }
+
+        public void RetrieveSalary()
+        {
+            User = MainWindowViewModel.Instance.UserInfo.Username;
+            Salerys = Database.Instance.GetSalaryByUsername(User);
+        }
 
 
 

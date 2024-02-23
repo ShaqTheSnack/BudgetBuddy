@@ -2,7 +2,7 @@
 
 namespace BudgetF.ViewModels
 {
-    internal class LoginViewModel : ViewModelBase
+    public class LoginViewModel : ViewModelBase
     {
         public LoginViewModel()
         {

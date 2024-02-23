@@ -52,18 +52,7 @@
 		</Button>
 
 
-		<!--My Budget BTN-->
-		<Button Grid.Column="1"
-				Grid.Row="3"
-				Grid.ColumnSpan="3"
-				Content="Your Bills"
-				VerticalAlignment="Center"
-				HorizontalContentAlignment="Center"
-				HorizontalAlignment="Stretch"
-				Background="Gray"
-				Foreground="White"
-				Command="{Binding BillsBTN}">
-		</Button>
+
 
 
 		<!--My Budget BTN-->

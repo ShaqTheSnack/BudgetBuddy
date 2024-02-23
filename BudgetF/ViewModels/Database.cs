@@ -60,7 +60,7 @@ namespace BudgetF.ViewModels
         #endregion
 
         #region CREATE
-        internal bool CreateUser(string Firstname, string Lastname, string Username, string Password)
+        internal bool CreateUser(string Firstname, string Lastname, string Username, string Password, double Salary)
         {
             string procedureName = "CreateUser";
 
@@ -78,6 +78,7 @@ namespace BudgetF.ViewModels
                         command.Parameters.AddWithValue("@Lastname", Lastname);
                         command.Parameters.AddWithValue("@Username", Username);
                         command.Parameters.AddWithValue("@Password", Password);
+                        command.Parameters.AddWithValue("@Salary", Salary);
 
                         int rowsAffected = command.ExecuteNonQuery();
 
@@ -99,5 +100,96 @@ namespace BudgetF.ViewModels
             }
         }
         #endregion
+
+
+        #region UPDATE
+        internal void UpdateSalary(string Username, double NewSalary)
+        {
+            string procedureName = "UpdateSalary";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(procedureName, connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@Username", Username);
+                        command.Parameters.AddWithValue("@NewSalary", NewSalary);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            Console.WriteLine("Salary updated successfully.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No rows affected. User might not exist or salary remains unchanged.");
+                        }
+                    }
+                }
+                catch (SqlException sqlEx)
+                {
+                    string errorDetails = $"SQL Error: {sqlEx.Message}";
+                    Console.WriteLine(errorDetails);
+                }
+                catch (Exception ex)
+                {
+                    string errorDetails = $"Error: {ex.Message}";
+                    Console.WriteLine(errorDetails);
+                }
+            }
+        }
+        #endregion
+
+
+        #region RETRIEVE
+        internal double GetSalaryByUsername(string Username)
+        {
+            string procedureName = "GetSalaryByUsername";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(procedureName, connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@Username", Username);
+
+                        object result = command.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            return Convert.ToDouble(result);
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Salary for user '{Username}' not found.");
+                            return -1;
+                        }
+                    }
+                }
+                catch (SqlException sqlEx)
+                {
+                    string errorDetails = $"SQL Error: {sqlEx.Message}";
+                    Console.WriteLine(errorDetails);
+                    return -1;
+                }
+                catch (Exception ex)
+                {
+                    string errorDetails = $"Error: {ex.Message}";
+                    Console.WriteLine(errorDetails);
+                    return -1;
+                }
+            }
+        }
+        #endregion
+
     }
 }

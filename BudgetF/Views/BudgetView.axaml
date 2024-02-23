@@ -66,5 +66,17 @@
 				Command="{Binding ViewBudget}">
 		</Button>
 
+
+		<Button Grid.Column="0"
+		Grid.Row="5"
+		Grid.ColumnSpan="5"
+		Content="BACK"
+		VerticalAlignment="Bottom"
+		HorizontalContentAlignment="Center"
+		HorizontalAlignment="Stretch"
+		Background="Gray"
+		Foreground="White"
+		Command="{Binding BackBTN}">
+		</Button>
 	</Grid>
 	</UserControl>

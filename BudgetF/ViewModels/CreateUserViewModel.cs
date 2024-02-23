@@ -64,7 +64,7 @@ namespace BudgetF.ViewModels
 
         public void CreateMyUser()
         {
-            if(Database.Instance.CreateUser(Firstname, Lastname, Username, Password))
+            if(Database.Instance.CreateUser(Firstname, Lastname, Username, Password, 0))
             {
                 MainWindowViewModel.Instance.SetViewModel(new LoginViewModel());
             }

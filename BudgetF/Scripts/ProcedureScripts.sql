@@ -28,7 +28,8 @@ CREATE PROCEDURE CreateUser
     @Firstname VARCHAR(50),
     @Lastname VARCHAR(50),
     @Username VARCHAR(50),
-    @Password VARCHAR(50)
+    @Password VARCHAR(50),
+    @Salary FLOAT
 AS
 BEGIN
     -- Check if the username already exists
@@ -39,11 +40,56 @@ BEGIN
     END
 
     -- Insert the new user into the Users table
-    INSERT INTO Users (Firstname, Lastname, Username, Password)
-    VALUES (@Firstname, @Lastname, @Username, @Password)
+    INSERT INTO Users (Firstname, Lastname, Username, Password, Salary)
+    VALUES (@Firstname, @Lastname, @Username, @Password, @Salary)
 
     PRINT 'User created successfully.'
 END
+
+
+
+
+GO;
+
+
+
+
+
+
+CREATE PROCEDURE UpdateSalary
+    @Username NVARCHAR(50),
+    @NewSalary FLOAT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    UPDATE Users
+    SET Salary = @NewSalary
+    WHERE Username = @Username;
+END;
+
+
+
+
+
+GO;
+
+
+
+
+CREATE PROCEDURE GetSalaryByUsername
+    @Username VARCHAR(50)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT Salary
+    FROM Users
+    WHERE Username = @Username;
+END;
+
+
+
 
 
 

@@ -216,5 +216,10 @@ namespace BudgetF.ViewModels
         {
             MainWindowViewModel.Instance.SetViewModel(new ViewBudgetViewModel());
         }
+
+        public void BackBTN()
+        {
+            MainWindowViewModel.Instance.SetViewModel(new HomePageViewModel());
+        }
     }
 }

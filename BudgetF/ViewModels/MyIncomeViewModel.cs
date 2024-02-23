@@ -16,7 +16,12 @@ namespace BudgetF.ViewModels
 
         }
 
-
+        string USERNAME;
+        public void SalaryData()
+        {
+            USERNAME = MainWindowViewModel.Instance.UserInfo.Username;
+            Database.Instance.UpdateSalary(USERNAME, PersonalIncome);
+        }
 
         
         private double _personalIncome;
@@ -33,6 +38,7 @@ namespace BudgetF.ViewModels
 
         public void BackButton()
         {
+            SalaryData();
             MainWindowViewModel.Instance.SetViewModel(new HomePageViewModel());
         }
     }

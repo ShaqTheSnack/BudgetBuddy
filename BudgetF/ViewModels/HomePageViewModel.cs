@@ -23,13 +23,6 @@ namespace BudgetF.ViewModels
             MainWindowViewModel.Instance.SetViewModel(new MyIncomeViewModel());
         }
 
-
-        public void BillsBTN()
-        {
-            MainWindowViewModel.Instance.SetViewModel(new BillsViewModel());
-        }
-
-
         public void BudgetBTN()
         {
             MainWindowViewModel.Instance.SetViewModel(new BudgetViewModel());
