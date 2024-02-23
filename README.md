@@ -1,4 +1,4 @@
-Budget Management Application
+<h1>Budget Management Application</h1>
 This repository hosts a budget management application developed in C# using Avalonia and MVVM architecture.
 
 Features:
